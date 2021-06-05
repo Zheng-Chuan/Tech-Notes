@@ -1,0 +1,57 @@
+# Thread类和Object类中的重要方法
+
+- wait() / notify() / notifyAll()
+
+    1. 一个线程想调用自己的wait()方法, 必须自己先获取到monitor锁 (待查)
+    2. 在下面四种情况下该线程会被唤醒:
+        - 另外一个线程调用notify(), 且它想唤醒的线程就是这个wait()了的线程
+        - 另外一个线程调用notifyAll()
+        - 过了wait(long timeout)规定的超时时间, 如果传入0就是永久等待
+        - 这个调用了wait()的线程本身调用interrupt()
+    3. 关于notify() / notifyAll()
+        - notify()只会从等待唤醒的线程中任意选择一个, Java并没有对如何选择设定一个规范, JVM可以有自己的实现
+        - 调用notify()时必须在synchronize代码块内, 否则会抛出异常
+        - notifyAll()会唤醒所有处于阻塞状态的线程, 至于哪个会获得monitor锁, 这个依赖于操作系统的调度
+    4. 如果wait()中的线程被中断了, 那么会抛出interruptedException异常
+- sleep()
+    1. 不释放任何当前持有的锁
+    2. 和wait()不同
+    3. sleep()会让线程进入waiting状态, 并不占用CPU资源, 但是不释放锁, 直到规定的时间后再执行, 休眠期间如果被中断会抛出异常, 并且清除中断状态
+
+- join()
+    1. 作用: 因为新的线程加入了我们, 所以我们要等到它执行完再出发
+
+- yield()
+    1. 作用: 释放我的CPU时间片
+    2. 和sleep()的区别: 是否可能随时被调度, 线程执行yield()后, 依然是runnable状态, 依然随时可能被再次调度
+  
+
+
+# 常见面试问题:
+    1. 两个线程分别打印奇数偶数
+        - 基于synchronize的实现和基于notify()的实现先展示出来
+        - 分析synchronize实现的弊端
+    2. 为什么wait()要在synchronize中使用, 而sleep()不需要
+        - 因为wait()使线程进入等待状态, 期待其他线程的notify(),如果不讲wait()放入synchronize中的话, 可能其他准备唤醒这个线程的线程在wait()执行前执行了notify(), 这样该线程执行wait()后就没有线程去唤醒它, 它就会一直等待.
+        - sleep()只是让自己的休眠, 不涉及其他线程, 所以不存在这样的问题
+    3. 为什么要把wait(), notify(), notifyAll()定义在Object类里面, 而sleep()定义在Thred类里面
+        - 因为这三个方法都是和对象相关的, 每个对象的元信息中都有关于它目前所持有的锁的描述, 而我们希望一个线程可以持有多个锁
+    4. wait方法是属于Object对象的, 那调用Thread.wait()会怎样?
+    5. 执行notifyAll()之后, 所有的线程都会再次抢夺锁, 如果某线程抢夺失败, 它会处于什么状态?
+        - 它会继续接受线程调度器的调度, 处于积极争抢锁的状态, 它这个时候应该不在waiting状态, 而是处于阻塞状态(待验证)
+    6. 可以用suspend()和resume()来阻塞线程吗? 为什么
+        - 不推荐, 因为已经被wait()和notify()代替了
+    7. 手写生产者消费者模型
+        - 基于阻塞队列的实现
+        - 基于notify()的实现
+    8. sleep()和wait()的异同
+        - 相同:
+            1. wait()和sleep()都可以让线程阻塞, 使其进入waiting和time_waiting
+            2. wait()和sleep()都可以响应Thread.interrupt()中断
+        - 不同:
+            1. wait()方法必须在synchronize代码块中, 而sleep不需要
+            2. 在synchronize代码块中执行sleep()方法时, 线程不会释放锁, 而wait()会
+            3. sleep()短暂休眠后会退出阻塞的状态, 而wati()需要由其他线程来notify() / notifyAll()
+            4. wait() / notify() / notifyAll()都是Object类的方法, 而sleep() / yield() 都是Thread类的方法 
+  
+

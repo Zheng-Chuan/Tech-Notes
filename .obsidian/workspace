@@ -1,0 +1,132 @@
+{
+  "main": {
+    "id": "8a0b8fc82c4d63b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "887813539915bc92",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "Spring/Untitled.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8400ba11436c62b2",
+    "type": "split",
+    "children": [
+      {
+        "id": "43b91e45281387fc",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "29760b38f441aee4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "a544cc37371e8c15",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "c91c814142be2e8a",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 186,
+    "collapsed": true
+  },
+  "right": {
+    "id": "e8d42fe5e9c6c441",
+    "type": "split",
+    "children": [
+      {
+        "id": "4e23d3558432a8f0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "12fdb8414eafeef7",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Spring/Untitled.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "99dafea0995a8b44",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "5ca644c2d0bdedeb",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Spring/Untitled.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "887813539915bc92",
+  "lastOpenFiles": [
+    "Spring/Untitled.md",
+    "Java/synchronized关键字.md",
+    "Java/synchronize关键字.md",
+    "2021-05-08.md",
+    "202105080151.md",
+    "Git 基本概念.md",
+    "Untitled.md",
+    "DB/MySQL.md",
+    "Pasted image 20210417202320.png",
+    "面经.md"
+  ]
+}
