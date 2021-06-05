@@ -9,8 +9,8 @@
         "state": {
           "type": "markdown",
           "state": {
-            "file": "Spring/Untitled.md",
-            "mode": "source"
+            "file": "DB/MySQL.md",
+            "mode": "preview"
           }
         }
       }
@@ -60,8 +60,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 186,
-    "collapsed": true
+    "width": 186
   },
   "right": {
     "id": "e8d42fe5e9c6c441",
@@ -77,7 +76,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Spring/Untitled.md",
+                "file": "DB/MySQL.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Spring/Untitled.md"
+                "file": "DB/MySQL.md"
               }
             }
           }
@@ -118,15 +117,15 @@
   },
   "active": "887813539915bc92",
   "lastOpenFiles": [
+    "DB/MySQL.md",
+    "2021-05-08.md",
+    "202105080151.md",
+    "Java/Concurrency/createThread.md",
     "Spring/Untitled.md",
     "Java/synchronized关键字.md",
     "Java/synchronize关键字.md",
-    "2021-05-08.md",
-    "202105080151.md",
     "Git 基本概念.md",
     "Untitled.md",
-    "DB/MySQL.md",
-    "Pasted image 20210417202320.png",
-    "面经.md"
+    "Pasted image 20210417202320.png"
   ]
 }
