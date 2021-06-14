@@ -1,15 +1,20 @@
+# 源码跟踪 - HiddenHttpMethodFilter的请求过滤过程
+
 ## 场景描述
 现在的请求设计都在使用RESTful风格, 即通过 **HTTP动词**(GET POST DELETE PUT PATCH) 和 **URI**(统一资源定位符).  
 
-但是浏览器上只能发出`POST`和`GET`请求, 所以为了处理带有其他的HTTP动词的RESTful请求, 所以一种规范就是将普通的`post`请求带上一个隐藏参数(不被用户所看到), 来用这种方式告诉服务端这其实是一个`PUT`或者`DELETE`请求.
+但是浏览器上的`<form>`只能发出`POST`和`GET`请求, 所以为了处理带有其他的HTTP动词的RESTful请求, 所以一种规范就是将普通的`post`请求带上一个隐藏参数(不被用户所看到), 来用这种方式告诉服务端这其实是一个`PUT`或者`DELETE`请求.
 
 对于Spring, 它就提供了一个 filter 来增强带有隐藏参数的`POST`请求, 定义在`org.springframework.web.filter.HiddenHttpMethodFilter.java`
 
 ## 源码跟踪
-分析一个典型的`<form>`表单提交后被`HiddenHttpMethodFilter`捕捉并处理的过程
+分析一个典型的`<form>`表单的提交的`PUT`或`DELETE`请求被`HiddenHttpMethodFilter`捕捉并处理的过程
 
-#### 源码
-`org.springframework.web.filter.HiddenHttpMethodFilter.java`
+1. 一个最常见的`HttpServletRequest request` 进入 `HiddenHttpMethodFilter` 的 `doFilterInternal()` 方法.
+2. 如果请求方法是`POST` 那么, 去尝试取`String paramValue`, 如果它不是空, 并且是`ALLOWED_METHODS`中的一个, 那么就将它转化成大写的`String method`, 然后和`HttpServletRequest request`一起送入 `HttpMethodRequestWrapper`
+3. `HttpMethodRequestWrapper`将其`method`设置为`POST PUT DELETE`
+
+### 源码 `org.springframework.web.filter.HiddenHttpMethodFilter.java`
 ```java
 public class HiddenHttpMethodFilter extends OncePerRequestFilter {
 
