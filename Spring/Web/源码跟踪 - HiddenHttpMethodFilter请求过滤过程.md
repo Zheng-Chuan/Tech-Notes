@@ -7,14 +7,14 @@
 
 对于Spring, 它就提供了一个 filter 来增强带有隐藏参数的`POST`请求, 定义在`org.springframework.web.filter.HiddenHttpMethodFilter.java`
 
-## 源码跟踪
+## 跟踪
 分析一个典型的`<form>`表单的提交的`PUT`或`DELETE`请求被`HiddenHttpMethodFilter`捕捉并处理的过程
 
 1. 一个最常见的`HttpServletRequest request` 进入 `HiddenHttpMethodFilter` 的 `doFilterInternal()` 方法.
 2. 如果请求方法是`POST` 那么, 去尝试取`String paramValue`, 如果它不是空, 并且是`ALLOWED_METHODS`中的一个, 那么就将它转化成大写的`String method`, 然后和`HttpServletRequest request`一起送入 `HttpMethodRequestWrapper`
 3. `HttpMethodRequestWrapper`将其`method`设置为`POST PUT DELETE`
 
-### 源码 `org.springframework.web.filter.HiddenHttpMethodFilter.java`
+#### 源码 `org.springframework.web.filter.HiddenHttpMethodFilter.java`
 ```java
 public class HiddenHttpMethodFilter extends OncePerRequestFilter {
 
@@ -79,7 +79,7 @@ public class HiddenHttpMethodFilter extends OncePerRequestFilter {
 }
 ```
 ## 小结
-## 拓展
+Spring把所有请求分成两类, **GET请求**和**非GET请求**, 对于后者采用了统一的办法就是进行了包装, 这样无论从网页端发过来的类似`POST {_method="PUT"}`的"伪POST"请求, 还是本身就是纯POST请求, 都可以通过这个包装器来统一成**RESTful**风格.
 
-*来源于网络Spring教程*
+
 
