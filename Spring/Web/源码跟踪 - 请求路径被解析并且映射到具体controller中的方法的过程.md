@@ -1,4 +1,4 @@
-# 源码跟踪[2] - DispatcherServlet解析请求路径并且映射到具体controller方法的过程
+# 源码跟踪[2] - 请求路径被解析并且映射到具体controller中的方法的过程
 
 ## 场景描述
 SpringMVC的最核心的一个servlet就是`DispatcherServlet`, 根据其源码中对这个Servlet的描述

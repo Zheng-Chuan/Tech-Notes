@@ -7,7 +7,7 @@
 
 对于Spring, 它就提供了一个 filter 来增强带有隐藏参数的`POST`请求, 定义在`org.springframework.web.filter.HiddenHttpMethodFilter.java`
 
-## 跟踪
+## 单步跟踪
 分析一个典型的`<form>`表单的提交的`PUT`或`DELETE`请求被`HiddenHttpMethodFilter`捕捉并处理的过程
 
 1. 一个最常见的`HttpServletRequest request` 进入 `HiddenHttpMethodFilter` 的 `doFilterInternal()` 方法.
