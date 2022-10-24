@@ -1,0 +1,42 @@
+{
+  "pluginEnabledStatus": {
+    "file-explorer": true,
+    "global-search": true,
+    "switcher": true,
+    "graph": true,
+    "backlink": true,
+    "command-palette": true,
+    "markdown-importer": true,
+    "word-count": true,
+    "open-with-default-app": true,
+    "tag-pane": true,
+    "page-preview": true,
+    "starred": true,
+    "daily-notes": true,
+    "templates": true,
+    "zk-prefixer": true,
+    "random-note": true,
+    "outline": true,
+    "slides": true,
+    "audio-recorder": true,
+    "translucency": false,
+    "publish": true,
+    "workspaces": true,
+    "file-recovery": true
+  },
+  "defaultViewMode": "preview",
+  "enabledPlugins": [
+    "obsidian-mind-map"
+  ],
+  "obsidianCss": true,
+  "promptDelete": true,
+  "showFrontmatter": true,
+  "foldHeading": false,
+  "foldIndent": false,
+  "showLineNumber": false,
+  "autoPairBrackets": false,
+  "smartIndentList": true,
+  "showUnsupportedFiles": true,
+  "readableLineLength": false,
+  "strictLineBreaks": true
+}
