@@ -42,9 +42,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "13ddef32c18af833",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "C++/C语言的陷阱到C++的改进.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -110,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "LeetCode/Tree/94. Binary Tree Inorder Traversal.md",
+                "file": "C++/C语言的陷阱到C++的改进.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "LeetCode/Tree/94. Binary Tree Inorder Traversal.md"
+                "file": "C++/C语言的陷阱到C++的改进.md"
               }
             }
           },
@@ -148,7 +160,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "LeetCode/Tree/94. Binary Tree Inorder Traversal.md",
+                "file": "C++/C语言的陷阱到C++的改进.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -164,8 +176,9 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "fc82eda4343b9ded",
+  "active": "13ddef32c18af833",
   "lastOpenFiles": [
+    "LeetCode/Tree/94. Binary Tree Inorder Traversal.md",
     "LeetCode/Tree/104. Maximum Depth of Binary Tree.md",
     "README.md",
     "XMC.md",
@@ -174,7 +187,6 @@
     "Python/Python中的常见类型.md",
     "Python/元类编程.md",
     "Python/一切皆对象.md",
-    "Python/序列类型.md",
-    "Python/深入类和对象.md"
+    "Python/序列类型.md"
   ]
 }
