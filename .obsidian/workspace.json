@@ -18,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "a9f32d23f91b8029",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LeetCode/Tree/104. Maximum Depth of Binary Tree.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "fc82eda4343b9ded",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "LeetCode/Tree/94. Binary Tree Inorder Traversal.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -69,7 +94,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 186
+    "width": 381.5
   },
   "right": {
     "id": "e8d42fe5e9c6c441",
@@ -85,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "LeetCode/Tree/94. Binary Tree Inorder Traversal.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -113,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "LeetCode/Tree/94. Binary Tree Inorder Traversal.md"
               }
             }
           },
@@ -123,7 +148,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "LeetCode/Tree/94. Binary Tree Inorder Traversal.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -139,17 +164,17 @@
   "ribbon": {
     "mostRecentAction": ""
   },
-  "active": "29760b38f441aee4",
+  "active": "fc82eda4343b9ded",
   "lastOpenFiles": [
-    "XMC.md",
+    "LeetCode/Tree/104. Maximum Depth of Binary Tree.md",
     "README.md",
+    "XMC.md",
     "问题.md",
     "Python/type,object,class的关系.md",
     "Python/Python中的常见类型.md",
     "Python/元类编程.md",
     "Python/一切皆对象.md",
     "Python/序列类型.md",
-    "Python/深入类和对象.md",
-    "Python/魔法函数.md"
+    "Python/深入类和对象.md"
   ]
 }
