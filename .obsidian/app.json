@@ -24,7 +24,7 @@
     "workspaces": true,
     "file-recovery": true
   },
-  "defaultViewMode": "preview",
+  "defaultViewMode": "source",
   "enabledPlugins": [
     "obsidian-mind-map"
   ],
@@ -38,5 +38,6 @@
   "smartIndentList": true,
   "showUnsupportedFiles": true,
   "readableLineLength": false,
-  "strictLineBreaks": true
+  "strictLineBreaks": true,
+  "livePreview": false
 }

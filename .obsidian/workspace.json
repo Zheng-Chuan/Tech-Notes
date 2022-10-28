@@ -15,7 +15,7 @@
               "state": {
                 "file": "README.md",
                 "mode": "preview",
-                "source": false
+                "source": true
               }
             }
           },
@@ -27,7 +27,7 @@
               "state": {
                 "file": "LeetCode/Tree/104. Maximum Depth of Binary Tree.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           },
@@ -39,7 +39,7 @@
               "state": {
                 "file": "LeetCode/Tree/94. Binary Tree Inorder Traversal.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           },
@@ -51,7 +51,7 @@
               "state": {
                 "file": "C++/C语言的陷阱到C++的改进.md",
                 "mode": "source",
-                "source": false
+                "source": true
               }
             }
           }
