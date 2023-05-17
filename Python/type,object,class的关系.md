@@ -2,9 +2,6 @@
 
 ![](./img/type.jpg)
 
-```python
-# -*- coding: utf-8 -*-
-if __name__ == "__main__":
     a = 1
     b = "abc"
     print(type(1))
@@ -42,7 +39,6 @@ if __name__ == "__main__":
     ()
     <class 'type'>
     '''
-```
 
 1. 从**继承关系**的角度来看
     所有的类以及各个类实例化的实例都是`object`的子类
