@@ -1,5 +1,3 @@
-import threading
-import multiprocessing
+from collections.abc import *
 
 
-print("Hello World")
